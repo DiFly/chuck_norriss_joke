@@ -32,4 +32,4 @@ node dist/bundle.js
 
 ## Credits
 
-Made with [me](https://example.com/)
+Made with [me](https://github.com/DiFly)
