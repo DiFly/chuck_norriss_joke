@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test PARCEL</title>
+<link rel="stylesheet" href="/src.e31bb0bc.css"></head>
+
+<body>
+    <div class="content">
+        <main class="main">
+            <div class="main__content">
+                <header class="header">
+                    <h1 class="header__logo">MSI 2020</h1>
+
+                    <nav class="header__menu">
+                        <button class="header__menu-btn header__menu-btn--open" id="header__menu-btn--open">
+                            <span class="header__menu-btn-img header__menu-btn-img--open"></span>
+                            <span class="header__menu-btn-txt">Favourite</span>
+                        </button>
+                    </nav>
+                </header>
+                <div class="form__wrapper">
+                    <form action="javascript:void(0)" id="form-search-joke">
+                        <div class="form__txt-block">
+                            <h2 class="form__header">Hey!</h2>
+                            <p class="form__description">Let's try to find a joke for you:</p>
+                        </div>
+
+                        <div class="form__radio-wrapper">
+                            <label class="form__radio-label">
+                                <input tabindex="0" type="radio" class="form__radio-input" name="search-type" value="random" checked="">
+                                <span class="form__radio-mark"></span>Random
+                            </label>
+                        </div>
+                        <div class="form__radio-wrapper">
+                            <label class="form__radio-label">
+                                <input tabindex="0" type="radio" class="form__radio-input" name="search-type" value="categories" data-open-id="form__categories-list">
+                                <span class="form__radio-mark"></span>From categories
+                            </label>
+
+                            <div class="form__categories-list form__radio-label__after-block" id="form__categories-list">
+                                <label class="form__categories-item">
+                                    <input type="checkbox" class="form__categories-checkbox" name="search-categories" value="animal" id="">
+                                    <span class="form__categories-name">ANIMAL</span>
+                                </label>
+                                <label class="form__categories-item">
+                                    <input type="checkbox" class="form__categories-checkbox" name="search-categories" value="career" id="">
+                                    <span class="form__categories-name">CAREER</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__radio-wrapper">
+                            <label class="form__radio-label">
+                                <input type="radio" class="form__radio-input" name="search-type" value="search" data-open-id="form__search-block">
+                                <span class="form__radio-mark"></span>Search
+                            </label>
+
+                            <div class="form__search-block form__radio-label__after-block" id="form__search-block">
+                                <label class="form__search">
+                                    <input type="text" name="search-txt" class="form__search-input" placeholder="Write here...">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form__submit">
+                            <button type="submit" class="form__btn form__btn--submit">Get a joke</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="joke-list" id="joke-list-search">
+
+                    <!--
+                    <article class="joke" data-joke-id="">
+                        <div class="joke__header">
+                            <button class="joke__heart"></button>
+                        </div>
+                        <div class="joke__content">
+                            <div class="joke__left">
+                                <div class="joke__message-img"></div>
+                            </div>
+                            <div class="joke__right">
+                                <div class="joke__id">
+                                    ID: <a href="javascript:void(0)" class="joke__id-link">XNaAxUduSw6zANDaIEab7A</a>
+                                </div>
+                                <div class="joke__txt-wrapper">
+                                    <p class="joke__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quaerat,
+                                        voluptas?</p>
+                                </div>
+                                <div class="joke__date-and-category-wrapper">
+                                    <p class="joke__date">Last update:
+                                        <time datetime="2020-02-14 20:00" class="joke__date-time">1920 hours ago</time>
+                                    </p>
+                                    <div class="joke__category-list">
+                                        <a href="javascript:void(0)" class="joke__category-link">CELEBRIRY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="joke" data-joke-id="">
+                        <div class="joke__header">
+                            <div class="joke__heart joke__heart--selected"></div>
+                        </div>
+                        <div class="joke__content">
+                            <div class="joke__left">
+                                <div class="joke__message-img"></div>
+                            </div>
+                            <div class="joke__right">
+                                <div class="joke__id">
+                                    ID: <a href="javascript:void(0)" class="joke__id-link">XNaAxUduSw6zANDaIEab7A</a>
+                                </div>
+                                <div class="joke__txt-wrapper">
+                                    <p class="joke__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quaerat,
+                                        voluptas?</p>
+                                </div>
+                                <div class="joke__date-and-category-wrapper">
+                                    <p class="joke__date">Last update:
+                                        <time datetime="2020-02-14 20:00" class="joke__date-time">1920 hours ago</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    -->
+                </div>
+            </div>
+        </main>
+        <article class="right">
+            <div class="right__content">
+                <header class="header header--right">
+                    <nav>
+                        <button class="header__menu-btn header__menu-btn--close" id="header__menu-btn--close">
+                            <span class="header__menu-btn-img header__menu-btn-img--close"></span>
+                            <span class="header__menu-btn-txt">Favourite</span>
+                        </button>
+                    </nav>
+                </header>
+                <div class="joke-list joke-list__favourite" id="joke-list-favourite">
+
+                    <article class="joke" data-joke-id="">
+                        <div class="joke__header">
+                            <div class="joke__heart joke__heart--selected"></div>
+                        </div>
+                        <div class="joke__content">
+                            <div class="joke__left">
+                                <div class="joke__message-img"></div>
+                            </div>
+                            <div class="joke__right">
+                                <div class="joke__id">
+                                    ID: <a href="javascript:void(0)" class="joke__id-link">XNaAxUduSw6zANDaIEab7A</a>
+                                </div>
+                                <div class="joke__txt-wrapper">
+                                    <p class="joke__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quaerat,
+                                        voluptas?</p>
+                                </div>
+                                <div class="joke__date-and-category-wrapper">
+                                    <p class="joke__date">Last update:
+                                        <time datetime="2020-02-14 20:00" class="joke__date-time">1920 hours ago</time>
+                                    </p>
+                                    <div class="joke__category-list">
+                                        <a href="javascript:void(0)" class="joke__category-link">CELEBRIRY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="joke" data-joke-id="">
+                        <div class="joke__header">
+                            <div class="joke__heart joke__heart--selected"></div>
+                        </div>
+                        <div class="joke__content">
+                            <div class="joke__left">
+                                <div class="joke__message-img"></div>
+                            </div>
+                            <div class="joke__right">
+                                <div class="joke__id">
+                                    ID: <a href="javascript:void(0)" class="joke__id-link">XNaAxUduSw6zANDaIEab7A</a>
+                                </div>
+                                <div class="joke__txt-wrapper">
+                                    <p class="joke__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quaerat,
+                                        voluptas?</p>
+                                </div>
+                                <div class="joke__date-and-category-wrapper">
+                                    <p class="joke__date">Last update:
+                                        <time datetime="2020-02-14 20:00" class="joke__date-time">1920 hours ago</time>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="joke" data-joke-id="">
+                        <div class="joke__header">
+                            <div class="joke__heart joke__heart--selected"></div>
+                        </div>
+                        <div class="joke__content">
+                            <div class="joke__left">
+                                <div class="joke__message-img"></div>
+                            </div>
+                            <div class="joke__right">
+                                <div class="joke__id">
+                                    ID: <a href="javascript:void(0)" class="joke__id-link">XNaAxUduSw6zANDaIEab7A</a>
+                                </div>
+                                <div class="joke__txt-wrapper">
+                                    <p class="joke__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quaerat,
+                                        voluptas?</p>
+                                </div>
+                                <div class="joke__date-and-category-wrapper">
+                                    <p class="joke__date">Last update:
+                                        <time datetime="2020-02-14 20:00" class="joke__date-time">1920 hours ago</time>
+                                    </p>
+                                    <div class="joke__category-list">
+                                        <a href="javascript:void(0)" class="joke__category-link">CELEBRIRY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="/src.e31bb0bc.js"></script>
+</body>
+
+</html>
